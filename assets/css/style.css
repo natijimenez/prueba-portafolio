@@ -1,0 +1,130 @@
+/*** ESTILOS MOBILE ***/
+/* ESTILOS GENERALES */
+/* paleta de colores */
+:root {
+    --verde: #22e3b3; 
+    --celeste: #3ac5eb ;
+    --salmon: #FA7C92;
+    --amarillo: #FFF7C0;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #939494;
+}
+* {
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* tamaño fuentes */
+p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Playpen Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilos sección navbar */
+#CONTENEDOR-LANDING .navbar {
+    background-color: var(--blanco);
+}
+#CONTENEDOR-LANDING .navbar a {
+    color: var(--negro);
+}
+#CONTENEDOR-LANDING .navbar a:hover {
+    color: var(--gris);
+}
+#CONTENEDOR-LANDING .contenedor-navbar .navbar-collapse {
+    flex-grow: 0;
+}
+#CONTENEDOR-LANDING .contenedor-navbar {
+    width: 90%;
+}
+#CONTENEDOR-LANDING .contenedor-navbar .nav-link {
+    text-align: center;
+}
+#CONTENEDOR-LANDING .nav-item a {
+    color: var(--negro);
+    font-weight: bold;
+}
+
+/* estilos sección header */
+#CONTENEDOR-LANDING header {
+    margin-top: 3rem;
+}
+#CONTENEDOR-LANDING .contenedor-header {
+    position: relative;
+}
+#CONTENEDOR-LANDING .box-derecha {
+    background-color: var(--celeste);
+    position: absolute;
+    top: 50%;
+    height: 400px;
+    z-index: -1;
+}
+#CONTENEDOR-LANDING .titulo-box-derecha {
+    color: var(--blanco);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    right: 20%;
+}
+#CONTENEDOR-LANDING .texto-box-derecha {
+    font-family: "Playpen Sans", Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--blanco);
+    position: absolute;
+    font-size: 1rem;
+    text-align: center;
+    top: 55%;
+    left: 20%;
+    right: 20%;
+}
+#CONTENEDOR-LANDING .contenedor-header img {
+    display: block;
+    max-width: 15rem;
+    margin: auto;
+}
+
+/*** ESTILOS TABLET ***/
+@media (min-width: 768px) {
+    /* estilos sección header*/
+    #CONTENEDOR-LANDING header {
+        margin-top: 5rem;
+    }
+    #CONTENEDOR-LANDING .contenedor-header img {
+        max-width: 20rem;
+    }
+    #CONTENEDOR-LANDING .titulo-box-derecha {
+        top: 50%;
+    }
+    #CONTENEDOR-LANDING .texto-box-derecha {
+        top: 65%;
+      
+    }
+}
+
+/*** ESTILOS DESKTOP ***/
+@media (min-width: 1024px) {
+    /* tamaño fuentes */
+    h1 {
+        font-size: 2rem;
+    }
+
+    #CONTENEDOR-LANDING .titulo-box-derecha {
+        top: 55%;
+    }
+    #CONTENEDOR-LANDING .texto-box-derecha {
+        font-size: 1.2rem;
+        top: 72%;
+        max-width: 500px;
+        margin: auto;
+    }
+    #CONTENEDOR-LANDING .box-derecha {
+        height: 40vh;
+    }
+}
